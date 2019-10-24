@@ -1,0 +1,31 @@
+@custom-media --vp-s (width <= 700px);
+
+.header {
+  background: var(--gradient-whirlpool);
+  padding: var(--spacing-small);
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  color: var(--color-space-100);
+  margin: 0;
+
+  & i {
+    background-color: var(--color-space-100);
+  }
+}
+
+@media (--vp-s) {
+  .container {
+    flex-direction: column;
+  }
+
+  .title {
+    font-size: 35px;
+  }
+}

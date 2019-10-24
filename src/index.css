@@ -1,0 +1,57 @@
+@import '~normalize.css';
+
+:root {
+  --spacing-large: 32px;
+  --spacing-medium: 24px;
+  --spacing-small: 16px;
+  --spacing-tiny: 8px;
+}
+
+@custom-media --vp-s (width <= 700px);
+@custom-media --vp-m (width <= 900px);
+@custom-media --vp-l (width <= 1200px);
+
+html,
+body {
+  color: var(--color-space-900);
+  font: var(--font-secondary);
+}
+
+body.scrollLock {
+  overflow-y: hidden;
+}
+
+@media (--vp-s) {
+  body.scrollLock {
+    position: fixed;
+  }
+}
+
+main {
+  background-color: var(--color-space-100);
+  flex: 1;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+}
+
+:global(.container) {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1200px;
+  position: relative;
+  width: 100%;
+}
+
+@media (--vp-l) {
+  :global(.container) {
+    padding-left: var(--spacing-medium);
+    padding-right: var(--spacing-medium);
+  }
+}

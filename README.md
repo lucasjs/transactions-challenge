@@ -1,10 +1,12 @@
-# React Boilerplate
+# Transactions Challenge
 <p align="center">
-<img alt="David" src="https://img.shields.io/david/dev/lucasjs/react-boilerplate">
-<img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/lucasjs/react-boilerplate">
-<img alt="GitHub" src="https://img.shields.io/github/license/lucasjs/react-boilerplate">
-<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/lucasjs/react-boilerplate">
+<img alt="David" src="https://img.shields.io/david/dev/lucasjs/transactions-challenge">
+<img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/lucasjs/transactions-challenge">
+<img alt="GitHub" src="https://img.shields.io/github/license/lucasjs/transactions-challenge">
+<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/lucasjs/transactions-challenge">
 </p>
+
+![Screenshot](screenshot.png "Screenshot")
 
 Stack:
 - [React](https://github.com/facebook/react)
@@ -24,8 +26,8 @@ Stack:
 **1 -** Clone the project and install the dependencies:
 
 ```
-$ git clone https://github.com/lucasjs/react-boilerplate.git
-$ cd react-boilerplate
+$ git clone https://github.com/lucasjs/transactions-challenge.git
+$ cd transactions-challenge
 $ npm install
 ```
 
@@ -62,11 +64,13 @@ $ npm run storybook
     ├── public/
     |   └── index.html
     ├── src/
-    |   ├── components
+    |   ├── pages/
+    |   ├── sections/
     |   ├── stories/
     |   |   └── index.js
     |   ├── App.css
     |   ├── App.js
+    |   ├── index.css
     |   └── index.js
     ├── package-lock.json
     ├── package.json

@@ -1,5 +1,5 @@
 {
-  "name": "react-boilerplate",
+  "name": "transactions-challenge",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lucasjs/react-boilerplate.git"
+    "url": "git+https://github.com/lucasjs/transactions-challenge.git"
   },
   "keywords": [
     "react"
@@ -20,17 +20,23 @@
   "author": "Lucas JS",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/lucasjs/react-boilerplate/issues"
+    "url": "https://github.com/lucasjs/transactions-challenge/issues"
   },
-  "homepage": "https://github.com/lucasjs/react-boilerplate#readme",
+  "homepage": "https://github.com/lucasjs/transactions-challenge#readme",
   "dependencies": {
     "@hot-loader/react-dom": "^16.8.6",
+    "@magnetis/astro": "^3.0.0",
     "babel-cli": "^6.26.0",
     "babel-preset-react-app": "^3.1.2",
+    "formik": "^1.5.8",
+    "normalize.css": "^8.0.1",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-hot-loader": "^4.12.14"
+    "react-hot-loader": "^4.12.14",
+    "react-text-mask": "^5.4.3",
+    "text-mask-addons": "^3.8.0",
+    "yup": "^0.27.0"
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",
@@ -39,6 +45,7 @@
     "@storybook/addon-a11y": "^5.2.1",
     "@storybook/addon-actions": "^5.2.1",
     "@storybook/addon-backgrounds": "^5.2.1",
+    "@storybook/addon-centered": "^5.2.1",
     "@storybook/addons": "^5.1.11",
     "@storybook/react": "^5.2.1",
     "babel-eslint": "^10.0.3",

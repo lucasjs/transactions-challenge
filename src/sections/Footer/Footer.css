@@ -1,0 +1,18 @@
+.footer {
+  background: var(--gradient-black-hole);
+  padding: var(--spacing-small);
+}
+
+.container {
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+
+  & span {
+    color: var(--color-space-100);
+  }
+
+  & i {
+    background-color: var(--color-space-100);
+  }
+}

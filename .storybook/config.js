@@ -1,8 +1,11 @@
-import { addParameters, configure } from '@storybook/react'
+import { addDecorator, addParameters, configure } from '@storybook/react'
+import centered from '@storybook/addon-centered/react'
 
 function loadStories() {
   require('../src/stories')
 }
+
+addDecorator(centered)
 
 addParameters({
   backgrounds: [

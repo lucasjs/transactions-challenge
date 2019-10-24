@@ -1,0 +1,31 @@
+.transactions {
+  padding: var(--spacing-large) 0;
+  width: 100%;
+}
+
+.head {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.table {
+  border: 1px solid var(--color-space-300);
+  border-collapse: collapse;
+  margin-top: var(--spacing-large);
+  text-align: left;
+  width: 100%;
+}
+
+.empty {
+  padding: var(--spacing-small);
+
+  & i {
+    background-color: var(--color-uranus-500);
+  }
+
+  & span {
+    margin-left: var(--spacing-tiny);
+  }
+}

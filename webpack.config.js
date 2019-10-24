@@ -50,15 +50,17 @@ module.exports = {
         exclude: /node_modules/,
         use: 'file-loader'
       },
+      {
+        test: /\.svg$/,
+        include: /node_modules/,
+        use: 'file-loader'
+      },
       // CSS
       {
         test: /\.css$/,
         use: [
           {
-            loader: 'style-loader',
-            options: {
-              injectType: 'singletonStyleTag'
-            }
+            loader: 'style-loader'
           },
           // CSS Modules
           {
@@ -67,8 +69,7 @@ module.exports = {
               importLoaders: 1,
               modules: {
                 localIdentName: '[name]-[local]--[hash:base64:5]'
-              },
-              sourceMap: true
+              }
             }
           },
           // Post CSS Preset Env
@@ -81,8 +82,7 @@ module.exports = {
                   stage: 0,
                   browsers: 'last 4 versions'
                 })
-              ],
-              sourceMap: true
+              ]
             }
           }
         ]

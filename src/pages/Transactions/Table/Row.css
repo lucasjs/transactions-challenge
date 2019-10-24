@@ -1,0 +1,29 @@
+.row {
+  border-bottom: 1px solid var(--color-space-300);
+  outline: none;
+
+  &:nth-of-type(even) {
+    background-color: var(--color-space-200);
+  }
+
+  & td {
+    padding: var(--spacing-small);
+  }
+
+  &:hover td,
+  &:focus td {
+    border-color: var(--color-earth-500);
+    border-style: solid;
+    border-width: 1px 0;
+  }
+
+  &:hover td:first-child,
+  &:focus td:first-child {
+    border-width: 1px 0 1px 1px;
+  }
+
+  &:hover td:last-child,
+  &:focus td:last-child {
+    border-width: 1px 1px 1px 0;
+  }
+}

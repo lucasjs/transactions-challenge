@@ -1,8 +1,5 @@
-.App {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 1rem;
-}
-
-.title {
-  color: blue;
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }

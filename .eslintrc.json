@@ -11,6 +11,7 @@
     }
   },
   "rules": {
+    "indent": ["error", 2],
     "semi": ["error", "never"],
     "no-multiple-empty-lines": ["error", { "max": 1 }],
     "max-params": ["error", { "max": 5 }],
