@@ -17,6 +17,11 @@ const Row = ({ item }) => {
       <td>
         {item.transactionType}
       </td>
+      <td>
+        {item.currentBalance.toLocaleString('pt-br', {
+          currency: 'BRL', style: 'currency'
+        })}
+      </td>
     </tr>
   )
 }
@@ -24,6 +29,7 @@ const Row = ({ item }) => {
 Row.propTypes = {
   item: PropTypes.shape({
     id: PropTypes.number.isRequired,
+    currentBalance: PropTypes.number.isRequired,
     description: PropTypes.string.isRequired,
     transactionValue: PropTypes.number.isRequired,
     transactionType: PropTypes.oneOf(['credit', 'debit']).isRequired

@@ -45,12 +45,23 @@ const ModalForm = () => {
         values.id = transactions.length + 1
         let newTransactionValue = values.transactionValue.split('.').join('').replace(',','.')
         values.transactionValue = +newTransactionValue
+
+        if(values.transactionType === 'credit') {
+          let newBalance = balance + values.transactionValue
+          setBalance(newBalance)
+          values.currentBalance = newBalance
+        }
+        if(values.transactionType === 'debit') {
+          let newBalance = balance - values.transactionValue
+          setBalance(newBalance)
+          values.currentBalance = newBalance
+        }
+
         setTransactions([
           ...transactions,
           values
         ])
-        let newBalance = balance + values.transactionValue
-        setBalance(newBalance)
+
         setSubmitting(false)
         resetForm()
       }}

@@ -9,6 +9,7 @@ const Head = () => {
         <th scope="col">Description</th>
         <th scope="col">Value</th>
         <th scope="col">Type</th>
+        <th scope="col">Current Balance</th>
       </tr>
     </thead>
   )
